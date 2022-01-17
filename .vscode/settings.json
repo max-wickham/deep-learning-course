@@ -1,0 +1,4 @@
+{
+    "jupyter.jupyterServerType": "local",
+    "azureML.defaultWorkspaceId": "/subscriptions/c3df201c-1b7e-4ebb-9d41-dc78b4e36702/resourceGroups/Year3/providers/Microsoft.MachineLearningServices/workspaces/DeepLearning"
+}
