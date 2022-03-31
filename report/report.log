@@ -1,0 +1,470 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.14)  31 MAR 2022 13:36
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.tex
+(/home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/icl_eee_cw.sty (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen139
+\ESO@tempdimb=\dimen140
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+CVPR 8.5 x 11-Inch Proceedings Style `cvpr.sty'.
+\@ctmp=\skip49
+\@figindent=\skip50
+\cvprrulerbox=\box47
+\cvprrulercount=\count185
+\cvprruleroffset=\dimen141
+\cv@lineheight=\dimen142
+\cv@boxheight=\dimen143
+\cv@tmpbox=\box48
+\cv@refno=\count186
+\cv@tot=\count187
+\cv@tmpc@=\count188
+\cv@tmpc=\count189
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
+)
+\epsfxsize=\dimen146
+\epsfysize=\dimen147
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen148
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen149
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count190
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count191
+\leftroot@=\count192
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count193
+\DOTSCASE@=\count194
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box49
+\strutbox@=\box50
+\big@size=\dimen150
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count195
+\c@MaxMatrixCols=\count196
+\dotsspace@=\muskip16
+\c@parentequation=\count197
+\dspbrk@lvl=\count198
+\tag@help=\toks17
+\row@=\count199
+\column@=\count266
+\maxfields@=\count267
+\andhelp@=\toks18
+\eqnshift@=\dimen151
+\alignsep@=\dimen152
+\tagshift@=\dimen153
+\tagwidth@=\dimen154
+\totwidth@=\dimen155
+\lineht@=\dimen156
+\@envbody=\toks19
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen157
+\Hy@linkcounter=\count268
+\Hy@pagecounter=\count269
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count270
+Package hyperref Info: Option `breaklinks' set `true' on input line 4338.
+Package hyperref Info: Option `bookmarks' set `false' on input line 4338.
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks OFF on input line 4723.
+\c@Hy@tempcnt=\count271
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen158
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count272
+\Field@Width=\dimen159
+\Fld@charsize=\dimen160
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
+with kernel methods
+)
+\Hy@abspage=\count273
+\c@Item=\count274
+\c@Hfootnote=\count275
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
+with kernel methods
+)
+\Fld@listcount=\count276
+\c@bookmark@seq@number=\count277
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip54
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 25.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count278
+\l__pdf_internal_box=\box51
+) (/home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count279
+\scratchdimen=\dimen161
+\scratchbox=\box52
+\nofMPsegments=\count280
+\nofMParguments=\count281
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count282
+\MPscratchDim=\dimen162
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
+\everyMPtoPDFconversion=\toks22
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring OFF on input line 25.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count285
+)
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: No \author given.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<.//Part3.assets/sgd.png, id=13, 393.47pt x 208.78pt>
+File: .//Part3.assets/sgd.png Graphic file (type png)
+<use .//Part3.assets/sgd.png>
+Package pdftex.def Info: .//Part3.assets/sgd.png  used on input line 147.
+(pdftex.def)             Requested size: 237.13594pt x 125.82645pt.
+
+Overfull \hbox (18.35107pt too wide) in paragraph at lines 194--212
+ [][] 
+ []
+
+<.//Part4.assets/task14.png, id=15, 578.16pt x 216.81pt>
+File: .//Part4.assets/task14.png Graphic file (type png)
+<use .//Part4.assets/task14.png>
+Package pdftex.def Info: .//Part4.assets/task14.png  used on input line 221.
+(pdftex.def)             Requested size: 237.13594pt x 88.92575pt.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part3.assets/sgd.png>]
+<.//Part5.assets/t1.png, id=43, 578.16pt x 252.945pt>
+File: .//Part5.assets/t1.png Graphic file (type png)
+<use .//Part5.assets/t1.png>
+Package pdftex.def Info: .//Part5.assets/t1.png  used on input line 244.
+(pdftex.def)             Requested size: 237.13594pt x 103.7467pt.
+ [2 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part4.assets/task14.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/t1.png>]
+Overfull \hbox (4.47974pt too wide) in paragraph at lines 265--274
+ [][] 
+ []
+
+<.//Part5.assets/t3.png, id=66, 578.16pt x 252.945pt>
+File: .//Part5.assets/t3.png Graphic file (type png)
+<use .//Part5.assets/t3.png>
+Package pdftex.def Info: .//Part5.assets/t3.png  used on input line 288.
+(pdftex.def)             Requested size: 237.13594pt x 103.7467pt.
+[3 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/t3.png>]
+<.//Part6.assets/task2.png, id=93, 562.1pt x 642.4pt>
+File: .//Part6.assets/task2.png Graphic file (type png)
+<use .//Part6.assets/task2.png>
+Package pdftex.def Info: .//Part6.assets/task2.png  used on input line 352.
+(pdftex.def)             Requested size: 237.13594pt x 271.01184pt.
+<.//Part8.assets/t1.png, id=99, 578.16pt x 252.945pt>
+File: .//Part8.assets/t1.png Graphic file (type png)
+<use .//Part8.assets/t1.png>
+Package pdftex.def Info: .//Part8.assets/t1.png  used on input line 402.
+(pdftex.def)             Requested size: 237.13594pt x 103.7467pt.
+ [4 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part6.assets/task2.png>] [5
+
+ </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part8.assets/t1.png>] (/home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.bbl
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+[]\OT1/ptm/m/n/9 Keras ap-pli-ca-tions.  []$\OT1/pcr/m/n/9 https : / / keras . io / api /
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 12--14
+[]\OT1/ptm/m/n/9 Peak signal-to-noise ra-tio as an im-age qual-ity met-
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 16--19
+[]\OT1/ptm/m/n/9 I. J. Good-fel-low, J. Pouget-Abadie, M. Mirza, B. Xu,
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 38--41
+[]\OT1/ptm/m/n/9 R. Z. Raquel Ur-ta-sun.  Prin-ci-pal com-po-nents anal-y-sis
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 48--52
+[]\OT1/ptm/m/n/9 D. M. Rouse and S. S. Hemami.  Un-der-stand-ing and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--52
+\OT1/pcr/m/n/9 citeseerx . ist . psu . edu / viewdoc / download ?
+ []
+
+)
+<.//Part3.assets/task11.png, id=126, 387.4475pt x 279.0425pt>
+File: .//Part3.assets/task11.png Graphic file (type png)
+<use .//Part3.assets/task11.png>
+Package pdftex.def Info: .//Part3.assets/task11.png  used on input line 418.
+(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
+<.//Part3.assets/task12.png, id=127, 387.4475pt x 279.0425pt>
+File: .//Part3.assets/task12.png Graphic file (type png)
+<use .//Part3.assets/task12.png>
+Package pdftex.def Info: .//Part3.assets/task12.png  used on input line 424.
+(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
+<.//Part3.assets/task13.png, id=128, 387.4475pt x 279.0425pt>
+File: .//Part3.assets/task13.png Graphic file (type png)
+<use .//Part3.assets/task13.png>
+Package pdftex.def Info: .//Part3.assets/task13.png  used on input line 430.
+(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
+<.//Part5.assets/task21.png, id=129, 387.4475pt x 279.0425pt>
+File: .//Part5.assets/task21.png Graphic file (type png)
+<use .//Part5.assets/task21.png>
+Package pdftex.def Info: .//Part5.assets/task21.png  used on input line 437.
+(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
+<.//Part5.assets/task22.png, id=130, 393.47pt x 279.0425pt>
+File: .//Part5.assets/task22.png Graphic file (type png)
+<use .//Part5.assets/task22.png>
+Package pdftex.def Info: .//Part5.assets/task22.png  used on input line 443.
+(pdftex.def)             Requested size: 237.13594pt x 168.1719pt.
+<.//Part5.assets/task23.png, id=131, 398.48875pt x 279.0425pt>
+File: .//Part5.assets/task23.png Graphic file (type png)
+<use .//Part5.assets/task23.png>
+Package pdftex.def Info: .//Part5.assets/task23.png  used on input line 449.
+(pdftex.def)             Requested size: 237.13594pt x 166.05576pt.
+<.//Part7.assets/task2.png, id=132, 459.7175pt x 567.11874pt>
+File: .//Part7.assets/task2.png Graphic file (type png)
+<use .//Part7.assets/task2.png>
+Package pdftex.def Info: .//Part7.assets/task2.png  used on input line 457.
+(pdftex.def)             Requested size: 237.13594pt x 292.54103pt.
+
+
+LaTeX Warning: Text page 6 contains only floats.
+
+[6
+
+ </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part3.assets/task11.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part3.assets/task12.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part3.assets/task13.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/task21.png>] [7 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/task22.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/task23.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part7.assets/task2.png>] [8
+
+
+] (/home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.aux) ) 
+Here is how much of TeX's memory you used:
+ 7320 strings out of 481252
+ 108161 string characters out of 5915888
+ 426807 words of memory out of 5000000
+ 24033 multiletter control sequences out of 15000+600000
+ 423201 words of font info for 76 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 83i,8n,88p,1772b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on /home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.pdf (8 pages, 1429965 bytes).
+PDF statistics:
+ 202 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+
