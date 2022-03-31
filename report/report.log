@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.14)  31 MAR 2022 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.14)  31 MAR 2022 18:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -347,32 +347,31 @@ Package pdftex.def Info: .//Part4.assets/task14.png  used on input line 221.
 <.//Part5.assets/t1.png, id=43, 578.16pt x 252.945pt>
 File: .//Part5.assets/t1.png Graphic file (type png)
 <use .//Part5.assets/t1.png>
-Package pdftex.def Info: .//Part5.assets/t1.png  used on input line 244.
+Package pdftex.def Info: .//Part5.assets/t1.png  used on input line 246.
 (pdftex.def)             Requested size: 237.13594pt x 103.7467pt.
- [2 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part4.assets/task14.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/t1.png>]
-Overfull \hbox (4.47974pt too wide) in paragraph at lines 265--274
+
+Overfull \hbox (4.47974pt too wide) in paragraph at lines 268--277
  [][] 
  []
 
-<.//Part5.assets/t3.png, id=66, 578.16pt x 252.945pt>
+<.//Part5.assets/t3.png, id=51, 578.16pt x 252.945pt>
 File: .//Part5.assets/t3.png Graphic file (type png)
 <use .//Part5.assets/t3.png>
-Package pdftex.def Info: .//Part5.assets/t3.png  used on input line 288.
+Package pdftex.def Info: .//Part5.assets/t3.png  used on input line 287.
 (pdftex.def)             Requested size: 237.13594pt x 103.7467pt.
-[3 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/t3.png>]
-<.//Part6.assets/task2.png, id=93, 562.1pt x 642.4pt>
+[2 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part4.assets/task14.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/t1.png>]
+<.//Part6.assets/task2.png, id=76, 562.1pt x 642.4pt>
 File: .//Part6.assets/task2.png Graphic file (type png)
 <use .//Part6.assets/task2.png>
-Package pdftex.def Info: .//Part6.assets/task2.png  used on input line 352.
+Package pdftex.def Info: .//Part6.assets/task2.png  used on input line 353.
 (pdftex.def)             Requested size: 237.13594pt x 271.01184pt.
+ [3 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/t3.png>]
 <.//Part8.assets/t1.png, id=99, 578.16pt x 252.945pt>
 File: .//Part8.assets/t1.png Graphic file (type png)
 <use .//Part8.assets/t1.png>
-Package pdftex.def Info: .//Part8.assets/t1.png  used on input line 402.
+Package pdftex.def Info: .//Part8.assets/t1.png  used on input line 404.
 (pdftex.def)             Requested size: 237.13594pt x 103.7467pt.
- [4 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part6.assets/task2.png>] [5
-
- </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part8.assets/t1.png>] (/home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.bbl
+ [4 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part6.assets/task2.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part8.assets/t1.png>] (/home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.bbl
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -407,64 +406,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--52
  []
 
 )
-<.//Part3.assets/task11.png, id=126, 387.4475pt x 279.0425pt>
-File: .//Part3.assets/task11.png Graphic file (type png)
-<use .//Part3.assets/task11.png>
-Package pdftex.def Info: .//Part3.assets/task11.png  used on input line 418.
-(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
-<.//Part3.assets/task12.png, id=127, 387.4475pt x 279.0425pt>
-File: .//Part3.assets/task12.png Graphic file (type png)
-<use .//Part3.assets/task12.png>
-Package pdftex.def Info: .//Part3.assets/task12.png  used on input line 424.
-(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
-<.//Part3.assets/task13.png, id=128, 387.4475pt x 279.0425pt>
-File: .//Part3.assets/task13.png Graphic file (type png)
-<use .//Part3.assets/task13.png>
-Package pdftex.def Info: .//Part3.assets/task13.png  used on input line 430.
-(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
-<.//Part5.assets/task21.png, id=129, 387.4475pt x 279.0425pt>
-File: .//Part5.assets/task21.png Graphic file (type png)
-<use .//Part5.assets/task21.png>
-Package pdftex.def Info: .//Part5.assets/task21.png  used on input line 437.
-(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
-<.//Part5.assets/task22.png, id=130, 393.47pt x 279.0425pt>
-File: .//Part5.assets/task22.png Graphic file (type png)
-<use .//Part5.assets/task22.png>
-Package pdftex.def Info: .//Part5.assets/task22.png  used on input line 443.
-(pdftex.def)             Requested size: 237.13594pt x 168.1719pt.
-<.//Part5.assets/task23.png, id=131, 398.48875pt x 279.0425pt>
-File: .//Part5.assets/task23.png Graphic file (type png)
-<use .//Part5.assets/task23.png>
-Package pdftex.def Info: .//Part5.assets/task23.png  used on input line 449.
-(pdftex.def)             Requested size: 237.13594pt x 166.05576pt.
-<.//Part7.assets/task2.png, id=132, 459.7175pt x 567.11874pt>
+<.//Part7.assets/task2.png, id=122, 459.7175pt x 567.11874pt>
 File: .//Part7.assets/task2.png Graphic file (type png)
 <use .//Part7.assets/task2.png>
-Package pdftex.def Info: .//Part7.assets/task2.png  used on input line 457.
+Package pdftex.def Info: .//Part7.assets/task2.png  used on input line 420.
 (pdftex.def)             Requested size: 237.13594pt x 292.54103pt.
+<.//Part3.assets/task11.png, id=123, 387.4475pt x 279.0425pt>
+File: .//Part3.assets/task11.png Graphic file (type png)
+<use .//Part3.assets/task11.png>
+Package pdftex.def Info: .//Part3.assets/task11.png  used on input line 427.
+(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
+<.//Part3.assets/task12.png, id=124, 387.4475pt x 279.0425pt>
+File: .//Part3.assets/task12.png Graphic file (type png)
+<use .//Part3.assets/task12.png>
+Package pdftex.def Info: .//Part3.assets/task12.png  used on input line 433.
+(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
+<.//Part3.assets/task13.png, id=125, 387.4475pt x 279.0425pt>
+File: .//Part3.assets/task13.png Graphic file (type png)
+<use .//Part3.assets/task13.png>
+Package pdftex.def Info: .//Part3.assets/task13.png  used on input line 439.
+(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
+<.//Part5.assets/task21.png, id=126, 387.4475pt x 279.0425pt>
+File: .//Part5.assets/task21.png Graphic file (type png)
+<use .//Part5.assets/task21.png>
+Package pdftex.def Info: .//Part5.assets/task21.png  used on input line 446.
+(pdftex.def)             Requested size: 237.13594pt x 170.79048pt.
+<.//Part5.assets/task22.png, id=127, 393.47pt x 279.0425pt>
+File: .//Part5.assets/task22.png Graphic file (type png)
+<use .//Part5.assets/task22.png>
+Package pdftex.def Info: .//Part5.assets/task22.png  used on input line 452.
+(pdftex.def)             Requested size: 237.13594pt x 168.1719pt.
+<.//Part5.assets/task23.png, id=128, 398.48875pt x 279.0425pt>
+File: .//Part5.assets/task23.png Graphic file (type png)
+<use .//Part5.assets/task23.png>
+Package pdftex.def Info: .//Part5.assets/task23.png  used on input line 458.
+(pdftex.def)             Requested size: 237.13594pt x 166.05576pt.
+ [5
 
+ </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part7.assets/task2.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part3.assets/task11.png>]
 
 LaTeX Warning: Text page 6 contains only floats.
 
-[6
-
- </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part3.assets/task11.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part3.assets/task12.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part3.assets/task13.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/task21.png>] [7 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/task22.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/task23.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part7.assets/task2.png>] [8
-
+[6 </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part3.assets/task12.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part3.assets/task13.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/task21.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/task22.png> </home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/.//Part5.assets/task23.png>] [7
 
 ] (/home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.aux) ) 
 Here is how much of TeX's memory you used:
- 7320 strings out of 481252
- 108161 string characters out of 5915888
- 426807 words of memory out of 5000000
+ 7319 strings out of 481252
+ 108155 string characters out of 5915888
+ 429891 words of memory out of 5000000
  24033 multiletter control sequences out of 15000+600000
  423201 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 83i,8n,88p,1772b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,9n,88p,1772b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.pdf (8 pages, 1429965 bytes).
+Output written on /home/max/Sync/Imperial/Year3/DeepLearning/CourseWork/deep-learning-course/report/report.pdf (7 pages, 1427140 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 58 named destinations out of 1000 (max. 500000)
+ 198 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 57 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

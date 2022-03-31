@@ -108,7 +108,7 @@ Figures~\ref{fig:t311},~\ref{fig:t312},~\ref{fig:t313} in the appendix show the 
 The soft strategy was a random translation with a height and width factor of 0.2 and a bilinear interpolation. Conversely, the aggressive strategy used was the same random translation accompanied with a random rotation of 0.2 and a random zoom with a height of 0.3. Table~\ref{table:t311} shows each strategies validation accuracy. \\
 The soft augmentation strategy had the best result and the hard augmentation strategy gave the worst result. When looking at the loss curves for the three strategies it can be noted that only when using no augmentation does the validation loss start to increase with later epochs suggesting that overfitting is starting to occur at this point. In the other strategies, both of which use augmentation the loss is still decreasing by the last epoch suggestion that adding augmentation results in either more epochs or a more complex model needed to give overfitting due to the larger input space. This is good as it prevents the model from being too specific to the training data. \\
 The poor performance of the hard augmentation may be due to the dataset being standardised at a similar zoom and rotation level meaning that this augmentation is forcing the model to be able to classify a much greater range of possible inputs requiring a more complex model or more epochs to get the same classification accuracy. \\
-Batch normalisation was added after each of the max pooling payers following the convolution layers, dropout layers were added in the same place with a dropout value of 0.2 used. Dropout came first when using both. Table~\ref{table:t311} shows adding both batch normalisation and dropout was the most effective strategy. According to arXiv:1502.03167\cite{normalisation} batch normalisation prevents "small changes from being amplified into larger suboptimal changed" which can make the model more stable giving a higher accuracy. As said in the slides~\cite{slides3} dropout decreases overfitting so also increases accuracy in this case.
+Batch normalisation was added after each of the max pooling layers following the convolution layers, dropout layers were added in the same place with a dropout value of 0.2 used. Dropout came first when using both. Table~\ref{table:t311} shows adding both batch normalisation and dropout was the most effective strategy. According to arXiv:1502.03167\cite{normalisation} batch normalisation prevents "small changes from being amplified into larger suboptimal changed" which can make the model more stable giving a higher accuracy. As said in the slides~\cite{slides3} dropout decreases overfitting so also increases accuracy in this case.
 \\
 Initialisation all the weights to zero gave an accuracy of exactly 10\%. This suggests that the input to the model has no effect on the output after training as the same number is always predicted. This is due to the zero values having no gradient so the weights aren't adjusted. 
 \\
@@ -195,7 +195,7 @@ Figure~\ref{fig:t34} shows the loss for each of the learning rates. The larger t
         \hline
         Model & Test Acc.\% & Time(s) & Epochs & Inference(ms) \\
         \hline
-        Scratch  & 53.8 & 531 & 9  & 0.40 \\
+        Scratch  & 29.6 & 780 & 13  & 0.40 \\
         Pre Train &  47.0 & 660 & 20 & 0.40 \\
         Fine Tuning & 54.4 & 531 & 9 & 0.39 \\
         DenseNet121 & 55.4 & 644 & 7 & 0.72 \\
@@ -210,8 +210,8 @@ Figure~\ref{fig:t34} shows the loss for each of the learning rates. The larger t
         \hline
     \end{tabular}
     \medbreak
-    \caption{T3.1 Results for different training methods}
-    \vspace{-0.5cm}
+    \caption{T4.1 Results comparing training from scratch, fine tuning or freezing pre trained weights. Accompanied with DenseNet121 results}
+    \vspace{-0.4cm}
     \label{table:t41}
 \end{table}
 
@@ -228,8 +228,10 @@ Figure~\ref{fig:t34} shows the loss for each of the learning rates. The larger t
 % The use of a pre trained weights combined with fine tuning had a similar time per epoch as training from scratch but resulted in a better test accuracy. Although more epochs were used after the number of epochs at which the scratch training finished this method already had a higher validation accuracy suggesting it to be the superior training means in this case. 
 % ADD REF TO A PAPER
 
-As can be seen from table~\ref{table:t41} and figure~\ref{fig:t41}, using a pre-trained VGG-16 model and freezing the weights gave significantly worse performance than either training VGG-16 from scratch or fine tuning the weights. Despite having a faster training time per epoch even after twice the epochs as the other strategies the test, training and validation accuracy was roughly 8\% lower. This suggests perhaps that the features learned by the pre trained VGG image net model do not transfer well to the dataset used here. The features do work to an extent as it is still possible to get a relatively high test accuracy compared to training from scratch and is certainly better than untrained features. \\
-There is little difference in the results between training the model from scratch or fine tuning the pre trained model which corroborates the idea that the pre-learned features don't transfer that well to this dataset. Interestingly, the fine tuned training accuracy is lower than that of training from scratch but the test and validation accuracy is marginally higher. This suggests that the features in the fine tuned model are more generalised and less over fit to the data. The result of this indicates that fine tuning the weights is better than starting from scratch but doesn't make a huge difference in this case. \\
+% As can be seen from table~\ref{table:t41} and figure~\ref{fig:t41}, using a pre-trained VGG-16 model and freezing the weights gave significantly worse performance than either training VGG-16 from scratch or fine tuning the weights. Despite having a faster training time per epoch even after twice the epochs as the other strategies the test, training and validation accuracy was roughly 8\% lower. This suggests perhaps that the features learned by the pre trained VGG image net model do not transfer well to the dataset used here. The features do work to an extent as it is still possible to get a relatively high test accuracy compared to training from scratch and is certainly better than untrained features. \\
+% There is little difference in the results between training the model from scratch or fine tuning the pre trained model which corroborates the idea that the pre-learned features don't transfer that well to this dataset. Interestingly, the fine tuned training accuracy is lower than that of training from scratch but the test and validation accuracy is marginally higher. This suggests that the features in the fine tuned model are more generalised and less over fit to the data. The result of this indicates that fine tuning the weights is better than starting from scratch but doesn't make a huge difference in this case. \\
+As can be seen from table~\ref{table:t41} and figure~\ref{fig:t41}, training VGG from scratch gave the worst results and fine tuning the pre trained weights was the most effective strategy in terms of test accuracy. This is due to the features extracted in the VGG model trained from scratch are less useful than those in the pre trained model as the pre trained model was trained over a vastly longer period of time allowing it to extract the most useful features to classify a very large set of images. These features appear to transfer well to the data set used here. Fine tuning the model as opposed to freezing the weights also gives a performance increase which is due to the model being able to learn some features that are more specific to this dataset, especially as the range of possible images is much smaller than the pre trained weights were trained for. Freezing the weights results in a much lower training time per epoch in this case as less weights have to be updated, but as early stopping was never triggered the total time was more than using the fine tuned weights meaning that freezing the weights to reduce training time is not necessarily a good idea. All three methods had essentially the same inference time as they all use the same model and inference time is the time required to apply the model so doesn't change with training strategy. 
+
 The DenseNet121 model provided by Keras was used as the alternative model with its pre-trained weights being fine tuned to give the results shown in table~\ref{table:t41}. This model gave a better test accuracy with an increase of about a percent combined however, with a longer training time per epoch and greater inference time. The increased accuracy is expected as according to the keras website\cite{pretrained} DenseNet121 does have a higher score on the ImageNet challenge than VGG16. 
 %https://keras.io/api/applications/
 \\ The GPU used for all the results reported for this task is a Tesla P100-PCIE-16GB.
@@ -251,13 +253,14 @@ The plots in figure~\ref{fig:t51} show the predictions made for different LSTM w
 As can be seen in the plot the greater the window size the more smoothed out the predictions tend to be with the effect looking similar to that of a moving average filter of size 16, a plot of which has been added for reference in figure~\ref{fig:t51}. This may indicate that the LSTM in weighting the effect of each input too evenly. 
 %REF
 % ADD PREDICTIONS GET BETTER
+\vspace{-0.5cm}
 \paragraph{Task2: Text Embeddings}
 % - table of test accuracy
 % - appendix plots of val and train accuracy
 % - discuss results
-Table~\ref{table:t52} shows the test accuracy for the three different model types. As can be seen adding an LSTM and a larger embedding dimension made essentially no change to the test accuracy. Figures~\ref{fig:t521},\ref{fig:t522} and \ref{fig:t523} in the appendix show the training and validation accuracy curves. For the two methods that used an LSTM the validation accuracy settled almost immediately suggesting that it is difficult to get an accuracy much higher than the one achieved. When using the custom embedding the validation loss starts to increase over time indicating that overfitting occurs, a problem that is removed when using the glove embedding due to the glove embedding being more generalised. The use of the glove embedding did give an increase in accuracy which is expected as the embedding better represents the meaning of a word as opposed to being over fit to the training data in the custom embeddings. The lack of an LSTM gave the same score in the example sentences given, "the movie is boring and not good" for the negative score and "the movie is good and not boring" for the positive score. This is expected as the two sentences use the exact same words and so without a sense of order the model has no way of inferring the different sentiment. \\
+Table~\ref{table:t52} shows the test accuracy for the three different model types. Adding an LSTM and a larger embedding dimension made essentially no change to the test accuracy. Figures~\ref{fig:t521},\ref{fig:t522} and \ref{fig:t523} in the appendix show the training and validation accuracy curves. For the two methods that used an LSTM the validation accuracy settled almost immediately suggesting that it is difficult to get an accuracy much higher than the one achieved. When using the custom embedding the validation loss starts to increase over time indicating that overfitting occurs, a problem that is removed when using the glove embedding due to the glove embedding being more generalised. The use of the glove embedding did give an increase in accuracy which is expected as the embedding better represents the meaning of a word. The lack of an LSTM gave the same score in the example sentences given, "the movie is boring and not good" for the negative score and "the movie is good and not boring" for the positive score. This is expected as the two sentences use the exact same words and so without a sense of order the model has no way of inferring the different sentiment. \\
 The list of words most similar to "book" was generated for the two LSTM types. When using the Glove embedding the words generated were of a similar meaning or genre to "book", for instance "novel" and "author". The custom embedding, on the other hand, had no similarity in meaning, for example "points" and "stick". This is due to the fact that the glove embedding is trained in such a way as to give a similar embedding to words of a similar meaning and to allow combinations of words to give a summed embedding similar to words that have the same meaning as the words combined\cite{slides5}. This is not the case in the custom embedding, which is simply trained to try contain sentiment within the embedding.
-
+\vspace{-0.2cm}
 %//TODO  ADD REFERENCE
 \begin{table}[ht]
     \small
@@ -272,28 +275,26 @@ The list of words most similar to "book" was generated for the two LSTM types. W
         \hline
     \end{tabular}
     \medbreak
-    \caption{T3.1 Test accuracy and score difference for different models}
-    \vspace{-1cm}
+    \caption{T5.2 Test accuracy and score difference for different models}
+    \vspace{-0.6cm}
     \label{table:t52}
 \end{table}
-
-\paragraph{Task3: Text Generation}
-
 % - plot bleu against temp
 % - discuss plot
 % - discuss word generation differences (grammer etc)
-
 \begin{figure}[ht]
     \begin{center}
         \includegraphics[width=1\linewidth]{/Part5.assets/t3.png}
-        \caption{T5.1 Bleu score against temperature for character and word level models}\label{fig:t53}
-        \vspace{-0.3cm}
+        \caption{T5.3 Bleu score against temperature for character and word level models}\label{fig:t53}
+        \vspace{-0.5cm}
     \end{center}
 \end{figure}
+\vspace{-0.6cm}
+\paragraph{Task3: Text Generation}
 % RE GENERATE GRAPH
-Figure~\ref{fig:t53} shows how the bleu score is affected by temperature. For the character level model the trend is clearly that the bleu score decreases with a higher temperature, whilst for the word level model the blue score seems to increase slightly as temperature is increased. Since the bleu score does not take into account sentence meaning it is expected that in the case of the character level model an increased prevalence of words that don't exist gives a lower bleu score as the score is a measure of the number of matching words between the true text and the generated\cite{bleu}. Since the word level model doesn't give non existant words there is not much change in it's bleu score. 
+Figure~\ref{fig:t53} shows how the bleu score is affected by temperature. For the character level model the trend is clearly that the bleu score decreases with temperature, whilst for the word level model the blue score seems to increase slightly with temperature. Since the bleu score does not take into account sentence meaning it is expected that in the case of the character level model an increased prevalence meaningless words gives a lower bleu score as the score is a measure of the number of matching words between the true text and the generated\cite{bleu}. Since the word level model doesn't give non existant words there is not much change in it's bleu score. 
 
-When increasing the temperature the generated sentences changed significantly. The sentences generated with extremely low temperatures contained a lot of repetition but only real words were generated and the grammatical accuracy  and sentence meaning were not bad. As the temperature was increased so did the variation in the text along with the amount of incorrect words, accompanied with a decrease in overall sentence coherence. A temperature of about 1 gave the best combination of variation and accuracy for the character level model. For the word level model the problem of incorrect words is not present due to the words themselves being generated, meaning the change is only in variation and grammar. Since the grammar is bad for any temperature the change is not extremely noticeable and the decrease in repetition is the bigger change as the temperature is increased. The sentences generated do tend to make less sense the greater the temperature used to generate them.
+When increasing the temperature the generated sentences changed significantly. The sentences generated with low temperatures contained much repetition but only real words were generated and the grammatical accuracy was not bad. As the temperature was increased so did the variation in the text along with the amount of incorrect words, accompanied with a decrease in overall sentence coherence. A temperature of about 1 gave the best combination of variation and accuracy for the character level model. For the word level model the problem of incorrect words is not present due to the words themselves being generated, meaning the change is only in variation and grammar. Since the grammar is bad for any temperature the change is not extremely noticeable and the decrease in repetition is the bigger change as the temperature is increased. The sentences generated do make less sense the greater with increased temperature.
 
 \section{Tutorial 6 Representational Learning}
 
@@ -303,8 +304,8 @@ When increasing the temperature the generated sentences changed significantly. T
 % - describe two models \\
 % - discuss results \\
 
-Table~\ref*{table:t61} shows the results found for the three different encoding methods used. The final architecture of the autoencoders with no CNN was three dense layers with 256, 128 and 10 neurons respectively. The first two layers also employed RELU activation and the decoder architecture was the same as the encoding reversed. When using a CNN three different CNN layers were used with 128, 64 and 64 layers each and all CNN layers were of size 3x3. The CNN layers were followed by three dense layers of size 256,64 and 10. All layers used RELU activation apart from the last layer and the decoder used the same architecture in reverse. \\
-As can be seen from table~\ref*{table:t61} the use of neural networks gave a large increase in accuracy as compared to PCA. The reason for the increased accuracy using neural nets is due to the ability to approximate non linear functions unlike linear PCA~\cite{pca}. The none CNN strategy has an optimal solution that is the same as a non linear PCA~\cite{pca}. Moving from a traditional NN to a CNN gave a small increase in performance in terms of accuracy although a fairly large decrease in MSE was found. This is expected as CNNs are better at extracting features from an image and so should be better at providing features for an encoding as compared to the traditional network.  
+Table~\ref*{table:t61} shows the results found for the different encoding methods used. The final architecture of the autoencoders with no CNN was three dense layers with 256, 128 and 10 neurons respectively. The first two layers also employed RELU activation and the decoder architecture was the same as the encoder reversed. When using a CNN three different CNN layers were used with 128, 64 and 64 layers each and all CNN layers were of size 3x3. The CNN layers were followed by three dense layers of size 256,64 and 10. All layers used RELU activation apart from the last layer and the decoder used the same architecture in reverse. \\
+As can be seen from table~\ref*{table:t61} the use of neural networks gave a larger accuracy than PCA. The reason for the increased accuracy using neural nets is due to the ability to approximate non linear functions unlike linear PCA~\cite{pca}. The none CNN strategy has an optimal solution that is the same as a non linear PCA~\cite{pca}. Moving from a traditional NN to a CNN gave a small increase in performance in terms of accuracy although a fairly large decrease in MSE was found. This is expected as CNNs are better at extracting features from an image and so should be better at providing features for an encoding as compared to the traditional network.  
 
 \begin{table}[ht]
     \small
@@ -327,7 +328,7 @@ As can be seen from table~\ref*{table:t61} the use of neural networks gave a lar
 \paragraph{Task2: Custom Loss Functions}
 
 Table~\ref{table:t62} shows how the MSE is dependent on the loss function used and figure~\ref*{fig:t62} shows the result filtering noise using a model trained with each loss function. The MS-SSIM and PSNR methods both give similar MSE and result in images that look very alike whereas the SSIM method gives an image that has fairly incorrect colours and gives a worse MSE. The SSIM function does give a similar level of noise removal in the image despite its colour inaccuracy. The increased performance of MS-SSIM vs SSIM is due to it working in a similar manner to SSIM by measuring structural similarity but operated at multiple scales giving a better metric\cite{ssim}. The degradation in colour seen with SSIM may be due to this metric not only valuing similar pixel values but also similar variance and cross correlation within a patch of pixels\cite{ssim}. The second two of which still give high scores if the overall average is shifted by a constant amount meaning a colour shift doesn't change two of these three metrics. PSNR may give a better MSE value due to its equations being directly related to MSE and so an improvement in PSNR gives an improvement in MSE\cite{psnr}. The better visual results in figure~\ref*{fig:t62} from MS-SSIM vs PSNR may be due to MS-SSIM judging similarity in a manner close to that of a human\cite{ssim}.
-Some more information on the implementation of the loss functions can be found in the appendix \ref*{app:loss}.
+Some more information on the implementation can be found in the appendix \ref*{app:loss}.
 
 \begin{table}[ht]
     \small
@@ -350,7 +351,7 @@ Some more information on the implementation of the loss functions can be found i
 \begin{figure}[ht]
     \begin{center}
         \includegraphics[width=1\linewidth]{/Part6.assets/task2.png}
-        \caption{T5.1 Noisy Image, De-noised Image and Clean Image for different loss functions with SSIM resulting in bad colour accuracy and MS-SSIM giving the best result}\label{fig:t62}
+        \caption{T6.3 Noisy Image, De-noised Image and Clean Image for different loss functions with SSIM resulting in bad colour accuracy and MS-SSIM giving the best result}\label{fig:t62}
         \vspace{-0.6cm}
     \end{center}
 \end{figure}
@@ -367,7 +368,7 @@ Some more information on the implementation of the loss functions can be found i
 % - mse and incep without KL divergance
 
 As can be seen in table~\ref*{table:t71} The use of KL divergence in the variational autoencoder model gave a slightly higher MSE but a noticeable improvement in the Inception Score. The reduction in MSE is expected as without the KL divergence the loss is simply based on the difference between the generated image and the correct image thus optimising the model to reduce this value\cite{vae}. \\
-If the distribution of the generated images is diverse in such a way that  images with a uniform spread of labels are generated i.e. $p(y)$ is uniform then a higher inception score is given\cite{kl-divergence} as this is the distribution of the true data. Since the KL divergence layer loss function tries to optimise to such a distribution\cite{kl-divergence} its presence helps to increase the inception score as is found in table~\ref*{table:t71}. \\
+If the distribution of the generated images is diverse in such a way that  images with a uniform spread of labels are generated i.e. $p(y)$ is uniform then a higher inception score is given\cite{kl-divergence} as this is the distribution of the true data. Since the KL divergence layer loss function tries to optimise to such a distribution\cite{kl-divergence} as it favours a distribution closer to the true distribution, its presence helps to increase the inception score as is found in table~\ref*{table:t71}. \\
 Table~\ref*{table:t71} shows that the cGAN network gave a higher Inception score than either of the VAE methods. Although a cGan does not rigorously learn the likelihood distribution unlike the VAE with KL it implicitly learns it through aiming to minimise the difference between $P(X)$ and $P(Z|Y)$\cite{gan}. In this case the GAN method has been more effective at creating accurate images and learning the distribution of images that the VAE methods, but this might not always be true.
 % https://arxiv.org/pdf/1706.04987.pdf
 % https://arxiv.org/pdf/1801.01973.pdf
@@ -385,7 +386,7 @@ Table~\ref*{table:t71} shows that the cGAN network gave a higher Inception score
         \hline
     \end{tabular}
     \medbreak
-    \caption{T6.1 MSE and Inception scores with and without KL divergence as well as for the GAN model}
+    \caption{T7.1 MSE and Inception scores with and without KL divergence as well as for the GAN model}
     \label{table:t71}
     \vspace{-0.7cm}
 \end{table}
@@ -396,11 +397,12 @@ Figure~\ref*{fig:t72} in the appendix shows several combinations of images with 
 
 \section{Tutorial 8 Reinforcement Learning}
 
-Figure~\ref*{fig:t81} shows the results found using SARSA and Q-Learning with $\epsilon$-greedy and softmax. The modification made are given in the appendix in section\ref*{app:modifications}.
+Figure~\ref*{fig:t81} shows the results found using SARSA and Q-Learning with $\epsilon$-greedy and softmax. The modification made are given in the appendix in section~\ref*{app:modifications}. The results show SARSA being influenced more by the use of softmax vs epsilon greedy which may be to do that in SARSA the rate of discovery is influenced by this choice, whilst in Q-Learning it is not. This is reflected in the Q-Learning curves being very similar.
+\vspace{-0.2cm}
 \begin{figure}[ht]
     \begin{center}
         \includegraphics[width=1\linewidth]{/Part8.assets/t1.png}
-        \caption{T5.1 Average Score of last 50 episodes for different RL techniques}\label{fig:t81}
+        \caption{T8.1 Average Score of last 50 episodes for different RL techniques}\label{fig:t81}
     \end{center}
 \end{figure}
 
@@ -412,6 +414,13 @@ Figure~\ref*{fig:t81} shows the results found using SARSA and Q-Learning with $\
 }
 
 \section{Appendix}
+
+\begin{figure}[ht]
+    \begin{center}
+        \includegraphics[width=1\linewidth]{/Part7.assets/task2.png}
+        \caption{T7.2 }\label{fig:t72}
+    \end{center}
+\end{figure}
 
 \begin{figure}[ht]
     \begin{center}
@@ -452,14 +461,8 @@ Figure~\ref*{fig:t81} shows the results found using SARSA and Q-Learning with $\
 \end{figure}
 
 
-\begin{figure}[ht]
-    \begin{center}
-        \includegraphics[width=1\linewidth]{/Part7.assets/task2.png}
-        \caption{T7.2 }\label{fig:t72}
-    \end{center}
-\end{figure}
-
 \FloatBarrier
+
 \subsection{Custom Loss Function}\label{app:loss}
 MS-SSIM and SSIM both give higher scores when two images are similar which was the opposite to what we want our loss functions to do. Thus $1-L$ (where L is the output of these functions) was taken as $1$ is the maximum score. It was found this method performed better than using $1/L$ in testing. In the case of PSNR $1/L$ was used as there is no limit on the value of PSNR with a higher value score being better. 
 
